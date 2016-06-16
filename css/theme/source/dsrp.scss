@@ -1,0 +1,121 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$dsrpBlue: #00adef;
+$dsrpRed: #ff5210;
+
+$mainColor: #222;
+$headingColor: $dsrpRed;
+
+$mainFontSize: 38px;
+$mainFont: 'Helvetica Neue', Helvetica, sans-serif;
+$headingFont: 'Helvetica Neue', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 600;
+$linkColor: darken( #2a76dd, 15%);
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+// Background generator
+@mixin bodyBackground() {
+    background: url("/img/network-background.jpg");
+    background-size: cover;
+    background-color: $backgroundColor;
+}
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+// dsrp specifics
+
+$mainTitleWidth: 8em;
+
+.reveal {
+    ul, h1, h2, h3, p { opacity: 0.77; }
+
+    font-weight: 500;
+
+    ul {
+        margin-bottom: 1em;
+    }
+
+    h2 {
+        color: $dsrpBlue;
+    }
+
+    div.main-title {
+        width: 20em;
+
+        h1, h2 {
+            text-align: right;
+        }
+        h1 {
+            padding-top: 1ex;
+            margin-bottom: 0;
+        }
+    }
+    div.references {
+        padding-top: 1.5ex;
+    }
+
+    div.references-small {
+        font-size: 70%;
+        position: relative;
+        bottom: -12ex;
+
+        a {
+            font-size: inherit;
+        }
+    }
+
+    .bigone {
+        font-size: 7em;
+    }
+
+    .black {
+        color: black;
+    }
+
+    .upper {
+        text-transform: uppercase;
+    }
+
+    .twocolumns {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+
+    .opaque {
+        opacity: 1;
+    }
+
+}
+

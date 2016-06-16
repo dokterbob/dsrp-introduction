@@ -42,7 +42,7 @@ section.has-dark-background {
 
 // Background generator
 @mixin bodyBackground() {
-    background: url("/img/network-background.jpg");
+    background: url("../../img/network-background.jpg");
     background-size: cover;
     background-color: $backgroundColor;
 }

@@ -10,3 +10,4 @@ tmp/**
 node_modules/
 .sass-cache
 img/*.mov
+npm-debug.log

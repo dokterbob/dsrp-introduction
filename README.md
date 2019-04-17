@@ -2,4 +2,8 @@
 Introductionary presentation to the Decentralized Society Research Project,
 created with [Reveal.js](https://github.com/hakimel/reveal.js).
 
-This presentation is available for viewing at http://intro.talks.dsrp.eu
+## Slides
+This slides are available at http://intro.talks.dsrp.eu
+
+## Video
+A full video of the presentation can be viewed at https://dsrp.eu/post/146300647328/dsrp-intro
